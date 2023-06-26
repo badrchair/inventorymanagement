@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Gestion_De_Stock</display-name>
+  
+ <servlet>
+ 	<servlet-name> si</servlet-name>
+ 	<servlet-class>web.ReserverServlet </servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> si</servlet-name>
+ 	<url-pattern>/invserv </url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ 	<servlet-name> sc</servlet-name>
+ 	<servlet-class>web.ConsommableServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> sc</servlet-name>
+ 	<url-pattern>/conserv</url-pattern>
+ </servlet-mapping>
+  
+  
+  
+ <servlet>
+ 	<servlet-name> sl</servlet-name>
+ 	<servlet-class>web.ConsommableServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> sl</servlet-name>
+ 	<url-pattern>/modif</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ <servlet>
+ 	<servlet-name> im</servlet-name>
+ 	<servlet-class>web.InventaireServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> im</servlet-name>
+ 	<url-pattern>/modifi</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+ 	<servlet-name> cs</servlet-name>
+ 	<servlet-class>web.SearchServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> cs</servlet-name>
+ 	<url-pattern>/findcons</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+   <servlet>
+ 	<servlet-name> ss</servlet-name>
+ 	<servlet-class>web.FindServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> ss</servlet-name>
+ 	<url-pattern>/findinv</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+   <servlet>
+ 	<servlet-name> res </servlet-name>
+ 	<servlet-class>web.ReserverServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> res </servlet-name>
+ 	<url-pattern>/rescons</url-pattern>
+ </servlet-mapping> 
+ 
+ 
+ 
+ 
+ <servlet>
+ 	<servlet-name> zab </servlet-name>
+ 	<servlet-class>web.CompteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> zab </servlet-name>
+ 	<url-pattern>/Signup</url-pattern>
+ </servlet-mapping> 
+
+
+
+ <servlet>
+ 	<servlet-name> log </servlet-name>
+ 	<servlet-class>web.CompteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name> log </servlet-name>
+ 	<url-pattern>/Lgin</url-pattern>
+ </servlet-mapping> 
+ 
+ 
+ <servlet>
+    <servlet-name>lg</servlet-name>
+    <servlet-class>web.Adminlog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lg</servlet-name>
+    <url-pattern>/adlog</url-pattern>
+  </servlet-mapping>
+ 
+
+
+ <servlet>
+    <servlet-name>ton</servlet-name>
+    <servlet-class>web.TonnerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ton</servlet-name>
+    <url-pattern>/toner</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>cab</servlet-name>
+    <servlet-class>web.CableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cab</servlet-name>
+    <url-pattern>/cable</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>cds</servlet-name>
+    <servlet-class>web.CdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cds</servlet-name>
+    <url-pattern>/cd</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>mds</servlet-name>
+    <servlet-class>web.ModifierServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mds</servlet-name>
+    <url-pattern>/modse</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>cbmd</servlet-name>
+    <servlet-class>web.CableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cbmd</servlet-name>
+    <url-pattern>/cabmod</url-pattern>
+  </servlet-mapping>
+  
+    
+  <servlet>
+    <servlet-name>cdmd</servlet-name>
+    <servlet-class>web.CdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cdmd</servlet-name>
+    <url-pattern>/cdmod</url-pattern>
+  </servlet-mapping>
+  
+    
+  <servlet>
+    <servlet-name>tnmd</servlet-name>
+    <servlet-class>web.TonnerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tnmd</servlet-name>
+    <url-pattern>/tnmod</url-pattern>
+  </servlet-mapping>
+  
+
+<servlet>
+    <servlet-name>toni</servlet-name>
+    <servlet-class>web.TonnerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>toni</servlet-name>
+    <url-pattern>/tone</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>resrv</servlet-name>
+    <servlet-class>web.ReserverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>resrv</servlet-name>
+    <url-pattern>/resc</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>get</servlet-name>
+    <servlet-class>web.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get</servlet-name>
+    <url-pattern>/aad</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>gerr</servlet-name>
+    <servlet-class>web.DemandeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gerr</servlet-name>
+    <url-pattern>/ger</url-pattern>
+  </servlet-mapping>
+  
+    
+   <servlet>
+    <servlet-name>grr</servlet-name>
+    <servlet-class>web.DemandeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>grr</servlet-name>
+    <url-pattern>/gero</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>fhs</servlet-name>
+    <servlet-class>web.SearchHisServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fhs</servlet-name>
+    <url-pattern>/findhis</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>cho</servlet-name>
+    <servlet-class>web.LogeedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cho</servlet-name>
+    <url-pattern>/ch</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+     <servlet>
+    <servlet-name>tnch</servlet-name>
+    <servlet-class>web.ChoixServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tnch</servlet-name>
+    <url-pattern>/tonech</url-pattern>
+  </servlet-mapping>
+</web-app>
